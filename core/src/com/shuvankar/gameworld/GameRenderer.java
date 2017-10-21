@@ -137,11 +137,17 @@ public class GameRenderer {
 
         if (myWorld.isReady()) {
             // Draw shadow first
-            AssetLoader.shadow.draw(batcher, "Touch me", (136 / 2)
-                    - (42), 76);
+            AssetLoader.shadow.draw(batcher, "ChoraiPakhi", (136 / 2)
+                    - (45), 20);
             // Draw text
-            AssetLoader.font.draw(batcher, "Touch me", (136 / 2)
-                    - (42 - 1), 75);
+            AssetLoader.font.draw(batcher, "ChoraiPakhi", (136 / 2)
+                    - (45), 20);
+            AssetLoader.font.draw(batcher, "by", (136 / 2)
+                    - (10), 40);
+            AssetLoader.font.draw(batcher, "Shuvankar", (136 / 2)
+                    - (40), 60);
+            AssetLoader.font.draw(batcher, "Sarkar", (136 / 2)
+                    - (30), 80);
         } else {
             if (myWorld.isGameOver() || myWorld.isHighScore()) {
                 if (myWorld.isGameOver()) {
